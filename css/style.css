@@ -1,0 +1,356 @@
+:root{
+    --fuentePrincipal: 'Poppins', sans-serif;
+    --colorOrange:#E74C3C;
+    --colorFondo:#F2EDE3;
+    --colorBlanco:#ffffff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    background-color: white;
+    line-height: 1.5;
+}
+/**GLOBALES**/
+
+a{
+    text-decoration: none;
+    color: var(--colorFondo);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s; 
+}
+
+a:hover{
+    text-decoration: none;
+    color: var(--colorOrange);
+    font-size: 1.3rem;
+}
+
+
+
+.contenedor{
+    width:min(90%,120rem);
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/**UTILIDADES^*/
+.text-align{
+    text-align: center;
+}
+
+/**UTILIDADES**/
+
+.linea{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--colorOrange);
+    width:10rem;
+    margin: auto;
+}
+.linea2{
+    margin-bottom: 4rem;
+}
+
+
+/**LOGO**/
+
+.logo{
+    margin-top: 2rem;
+}
+
+.loguito{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'GreatVibes';
+    color: var(--colorFondo);
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+
+
+/**SLIDER**/
+
+
+.header{
+    background-image: url(../img/baner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px;
+    position: relative;
+   padding-top: 3rem;
+   animation: animate 10s infinite;
+   transition: 0.5s;
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(../img/baner3.jpg);
+        background-size: cover;
+    }
+
+    40%{
+        background-image: url(../img/baner2.jpg);
+        background-size: cover;
+    }
+
+    80%{
+        background-image: url(../img/baner1.jpg);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(../img/parallax1.jpg);
+        background-size: cover;
+    }
+
+}
+
+
+/**SLIDER**/
+
+.medio{
+     text-align: center;
+}
+
+.header-titulo h2{
+    font-size: 10rem;
+    color: var(--colorFondo);
+    text-align: center;
+    margin: 10rem 0rem 0rem;
+}
+
+.header-titulo p{
+    font-size: 3rem;
+    color: var(--colorFondo);
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'GreatVibes';
+}
+
+.header-botones{
+    display: flex;
+    justify-content:center;
+    gap:2rem;
+}
+.header-botones a{
+    border: 2px solid white;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--colorOrange);
+    padding:1rem 2rem;
+    letter-spacing: 2px;
+    
+}
+
+.header-botones a:hover{
+    border: 1px solid white;
+    color: var(--colorOrange);
+    background-color: white;
+}
+
+/**SERVICES**/
+
+.main{
+    
+    border-top: 1rem solid var(--colorOrange);
+}
+
+
+.services h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1rem;
+    font-weight: 600;
+    margin-top: 15rem;
+}
+
+.services p{
+    text-align: center;
+    margin-bottom: 15rem;
+    font-size: 1.5rem;
+}
+
+.services-section{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 4rem;
+
+}
+
+.services-section-cuadro{
+    display: flex;
+    gap:2rem
+}
+
+.services-section-izquierda h3{
+    text-align: left;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.services-section-izquierda p{
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0;
+    padding-top: .2rem;
+}
+
+/**ABOUT**/
+
+.about-fondo{
+    background-color:var(--colorFondo);
+    margin-top: 10rem;
+}
+
+
+.about h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    font-weight: 600;
+    padding-top: 10rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    padding-top: .2rem;
+    text-align: center;
+}
+
+
+.about-section{
+    margin-top: 10rem;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:4rem;
+    
+}
+
+.about-section-imagen{
+    align-items: center;
+}
+
+.about-section-contenido h3{
+    text-align: left;
+}
+
+.about-section-contenido p{
+    text-align: left;
+}
+
+.about-section-contenido h3{
+    text-align: left;
+    font-size: 2.6rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+/**ABOUT**/
+
+.intermedio{
+    background-image: url(../img/parallax1.jpg);
+    text-align: center;
+    padding: 20rem 0;
+    border-bottom: 1rem solid var(--colorOrange);
+    border-top: 1rem solid var(--colorOrange);
+}
+
+.intermedio h2{
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: var(--colorBlanco);
+}
+
+.intermedio p{
+    font-size: 1.5rem;
+    color: var(--colorBlanco);
+}
+
+/**GALLERY**/
+
+.gallery{
+    text-align: center;
+    
+
+}
+
+.gallery h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    font-weight: 600;
+    padding-top: 10rem;
+}
+
+.gallery p{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    padding-top: .2rem;
+    text-align: center;
+}
+
+.about-section-imagen{
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+
+}
+
+/**CLIENTS SAY**/
+
+.clients-fondo{
+    text-align: center;
+    background-color: var(--colorFondo);
+    margin-bottom: 10rem;
+
+}
+
+.clients h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+    font-weight: 600;
+    padding-top: 10rem;
+}
+
+.clients p{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+    padding-top: .2rem;
+    text-align: center;
+}
